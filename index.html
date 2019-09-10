@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>SurveyForm3</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+    We would like your feedback on our recent performance maintaining your call volume.
+  </p>
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+      <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name">* Name:</label>
+          </div>
+
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+
+
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email">* Email</label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="email-label" for="email">* Age</label>
+            </div>
+            <div class="rightTab">
+              <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+            </div>
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="Industry">Which industry best describes your company? </label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="Industry" class="dropdown">
+                  <option disabled value> Select an option</option>
+                  <option value="Industry">Programmer</option>
+                  <option value="Industry">Airlines</option>
+                  <option value="Industry">Remote/Work At Home</option>
+                  <option value="Industry">Computer Science</option>
+                  <option value="Other"></option>
+                </select>
+              </div>
+
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="userRatings">How likely are you to Rate our business a 5 star?</label>
+              </div>
+
+              <div class="rightTab">
+                <ul style="list-style: none;">
+                  <li class="radio"><label>Definitely <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                    </label></li>
+                  <li class="radio"><label>Maybe <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                    </label></li>
+                  <li class="radio"><label>Not Sure <input name="radio-buttons" value="1" type="radio" class="userRatings">
+                    </label></li>
+                </ul>
+              </div>
+
+
+            <div class="rowTab">
+              <div class="labels">
+                <label for="best-like">What do you like best about our services?</label>
+              </div>
+
+               <div class="rightTab">
+                <select id="dropdown" name="bestlike" class="dropdown">
+                  <option disabled selected value>Select an option</option>
+                  <option value="IT Coverage">IT Coverage</option>
+                  <option value="Airlines Services">Airlines Services</option>
+                  <option value="Remote/Work At Home">Remote/Work At Home</option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Other"></option>
+                </select>
+              </div>
+
+                <div class="rowTab">
+                  <div class="labels">
+                    <label for="performances">What Services can we improve in to make your business run smoother?<br>(Please check all that apply):</label>
+                  </div>
+
+                    <div class="rightTab">
+                      <ul id="performances" style="list-style: none">
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Remote/Work At Home
+                          </label></li>
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Computer Science
+                          </label></li>
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Programming
+                          </label></li>
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Sales
+                          </label></li>
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Tech Support
+                          </label></li>
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Data Analyses
+                          </label></li>
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Airlines
+                          </label></li>
+                        <li class="checkbox"> <label> <input name="preference" value="1" type="checkbox" class="userRatings">Customer Service Support
+                          </label></li>
+                      </ul>
+                    </div>
+
+                  <div class="rightTab">
+                    <div class="labels">
+                      <label for="comments">Comments and Suggestions are Welcome, Thank you.</label>
+                    </div>
+                    <div class="rightTab">
+                      <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                      <button id="submit" type="submit">Submit</button>
+                    </div>
+
+      </form>
+    </div>
+
+</body>
+</html>
